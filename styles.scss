@@ -74,12 +74,12 @@ h1 {
     font-size: 3rem;
     font-weight: 900;
     margin: 0;
-  }
 
-  &-price span {
-    display: block;
-    font-size: 1.5625rem;
-    font-weight: 300;
+    span {
+      display: block;
+      font-size: 1.5625rem;
+      font-weight: 300;
+    }
   }
 
   &-description {
