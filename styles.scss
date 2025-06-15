@@ -1,0 +1,97 @@
+:root {
+  // ### Neutral
+  --clr-neutral-base: #4e4e4e;
+  --clr-neutral-light: #e5e3e8;
+  --clr-neutral-lighter: #fafafa;
+  --clr-neutral-white: #fff;
+
+  // ### Accent (turquoise)
+  --clr-accent-base: #00cdac;
+  --clr-accent-mid: #00a1ab;
+  --clr-accent-dark: #114243;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--clr-accent-mid);
+  font-weight: 900;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+.subhead {
+  font-size: 1.3125rem;
+  margin-top: 0;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+}
+
+.plan {
+  width: 200px;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0 0.5em;
+
+  &-dark {
+    color: #fff;
+    background: linear-gradient(-45deg, #00a1ab, #3741a0);
+
+    .button {
+      background: var(--clr-neutral-white);
+      color: var(--clr-neutral-base);
+    }
+  }
+
+  &-light {
+    color: #000;
+    background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+
+    .button {
+      background: var(--clr-neutral-base);
+      color: var(--clr-neutral-white);
+    }
+
+    .plan-price {
+      color: var(--clr-accent-mid);
+    }
+  }
+
+  &-title {
+    text-transform: uppercase;
+    margin: 0 0 1em;
+  }
+
+  &-price {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  &-price span {
+    display: block;
+    font-size: 1.5625rem;
+    font-weight: 300;
+  }
+
+  &-description {
+    margin: 2em 0;
+    line-height: 1.5;
+  }
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}

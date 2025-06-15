@@ -1,3 +1,13 @@
+:root {
+  --clr-neutral-base: #4e4e4e;
+  --clr-neutral-light: #e5e3e8;
+  --clr-neutral-lighter: #fafafa;
+  --clr-neutral-white: #fff;
+  --clr-accent-base: #00cdac;
+  --clr-accent-mid: #00a1ab;
+  --clr-accent-dark: #114243;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -6,7 +16,7 @@ body {
 h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: #00a1ab;
+  color: var(--clr-accent-mid);
   font-weight: 900;
   margin-top: 3em;
   margin-bottom: 0;
@@ -23,42 +33,53 @@ h1 {
 }
 
 .plan {
-  color: #fff;
-  background: linear-gradient(-45deg, #00a1ab, #3741a0);
   width: 200px;
   padding: 2em;
   border-radius: 1em;
   margin: 0 0.5em;
 }
-
-.plan__title {
+.plan-dark {
+  color: #fff;
+  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+}
+.plan-dark .button {
+  background: var(--clr-neutral-white);
+  color: var(--clr-neutral-base);
+}
+.plan-light {
+  color: #000;
+  background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+}
+.plan-light .button {
+  background: var(--clr-neutral-base);
+  color: var(--clr-neutral-white);
+}
+.plan-light .plan-price {
+  color: var(--clr-accent-mid);
+}
+.plan-title {
   text-transform: uppercase;
   margin: 0 0 1em;
 }
-
-.plan__price {
+.plan-price {
   font-size: 3rem;
   font-weight: 900;
   margin: 0;
 }
-
-.plan__price span {
+.plan-price span {
   display: block;
   font-size: 1.5625rem;
   font-weight: 300;
 }
-
-.plan__description {
+.plan-description {
   margin: 2em 0;
   line-height: 1.5;
 }
 
-.plan__button {
-  background: white;
-  color: #4e4e4e;
+.button {
   text-decoration: none;
   padding: 0.5em 0.75em;
   border-radius: 0.25em;
   text-transform: uppercase;
   font-weight: 700;
-}
+}/*# sourceMappingURL=styles.css.map */
